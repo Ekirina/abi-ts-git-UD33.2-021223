@@ -1,6 +1,11 @@
-let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-meses.forEach(function(elemento, indice, array){
-    console.log(elemento, indice);
-});
+let num = parseInt(prompt("Introduce un numero"));
+let primo = true;
 
+for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+        primo = false;
+    }
+}
+
+alert(primo);
 
